@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use this manifest to build Cannibal Open Touch 2.1.2 (for hybrid devices) -->
+
+<!-- Do NOT use this manifest for devices that do not require it, only known -->
+<!-- requirement is from the Kindle Fire ->
+
+<!-- For usage sync CM7 and drop this into .repo/local_manifests and re-sync -->
+<manifest>
+	<!-- Replace CWM w/ COTR -->
+    <remove-project name="CyanogenMod/android_bootable_recovery" />
+    <!-- Pull the most recent stable tag in case something has been changed. -->
+    <project path="bootable/recovery" name="ProjectOpenCannibal/android_bootable_recovery" revision="cot-2.1.2_landscape" />
+
+    <!-- Replace ext_utils (in system extras) w/ JB (newer versions break build system) -->
+    <remove-project name="CyanogenMod/android_system_extras" />
+    <project path="system/extras" name="CyanogenMod/android_system_extras" revision="jellybean" />
+
+    <!-- Add gui and res folders for COTR. -->
+    <project path="bootable/recovery/res" name="ProjectOpenCannibal/android_bootable_recovery_res" revision="master" />
+    <project path="bootable/recovery/gui" name="ProjectOpenCannibal/android_bootable_recovery_gui" revision="gingerbread" />
+</manifest>

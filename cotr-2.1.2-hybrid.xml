@@ -18,4 +18,9 @@
     <!-- Add gui and res folders for COTR. -->
     <project path="bootable/recovery/res" name="ProjectOpenCannibal/android_bootable_recovery_res" revision="master" />
     <project path="bootable/recovery/gui" name="ProjectOpenCannibal/android_bootable_recovery_gui" revision="gingerbread" />
+
+    <!-- And we also need cannibal lib -->
+    <remote name="bucket" fetch="https://bitbucket.org/" />
+    <project path="bootable/cannibal" name="drewwalton19216801/android_bootable_cannibal" remote="bucket" revision="master" />
+
 </manifest>

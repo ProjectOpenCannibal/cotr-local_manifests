@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use this manifest to build Cannibal Open Touch 2.1.1 (for legacy/gingerbread devices) -->
+<!-- For usage sync CM7 and drop this into .repo/local_manifests and re-sync -->
+<manifest>
+	<!-- Replace CWM w/ COTR -->
+    <remove-project name="CyanogenMod/android_bootable_recovery" />
+    <!-- Pull the most recent stable tag in case something has been changed. -->
+    <project path="bootable/recovery" name="ProjectOpenCannibal/android_bootable_recovery" revision="cot-2.1.1" />
+
+    <!-- Replace vendor_cyanogen with POC fork. -->
+    <remove-project name="CyanogenMod/android_vendor_cyanogen" />
+    <project path="vendor/cyanogen" name="ProjectOpenCannibal/android_vendor_cyanogen" revision="gbls670" />
+
+    <!-- Add gui and res folders for COTR. -->
+    <project path="bootable/recovery/res" name="ProjectOpenCannibal/android_bootable_recovery_res" revision="master" />
+    <project path="bootable/recovery/gui" name="ProjectOpenCannibal/android_bootable_recovery_gui" revision="gingerbread" />
+</manifest>
+

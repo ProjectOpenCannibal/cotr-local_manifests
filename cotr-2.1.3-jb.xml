@@ -6,7 +6,7 @@
 	<!-- Replace CWM w/ COTR -->
     <remove-project name="CyanogenMod/android_bootable_recovery" />
     <!-- Pull the most recent stable tag in case something has been changed. -->
-    <project path="bootable/recovery" name="ProjectOpenCannibal/android_bootable_recovery" revision="cot-2.1.3_jb" />
+    <project path="bootable/recovery" name="ProjectOpenCannibal/android_bootable_recovery" revision="jellybean-dev" />
 
     <!-- Add gui and res folders for COTR. -->
     <project path="bootable/recovery/res" name="ProjectOpenCannibal/android_bootable_recovery_res" revision="master" />

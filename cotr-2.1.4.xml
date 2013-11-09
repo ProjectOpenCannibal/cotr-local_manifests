@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use this manifest to build Cannibal Open Touch 2.1.3 (for jellybean devices) -->
+
+<!-- For usage sync CM10.1 and drop this into .repo/local_manifests and re-sync -->
+<manifest>
+	<!-- Replace CWM w/ COTR -->
+    <remove-project name="CyanogenMod/android_bootable_recovery" />
+    <!-- Pull the most recent stable tag in case something has been changed. -->
+    <project path="bootable/recovery" name="ProjectOpenCannibal/android_bootable_recovery" revision="cm-10.1" />
+
+    <!-- Add gui and res folders for COTR. -->
+    <project path="bootable/recovery/res" name="ProjectOpenCannibal/android_bootable_recovery_res" revision="master" />
+    <project path="bootable/recovery/gui" name="ProjectOpenCannibal/android_bootable_recovery_gui" revision="cotr-2.1-JB" />
+</manifest>

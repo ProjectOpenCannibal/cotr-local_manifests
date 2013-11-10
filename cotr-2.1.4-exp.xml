@@ -5,8 +5,13 @@
 <manifest>
 	<!-- Replace CWM w/ COTR -->
     <remove-project name="CyanogenMod/android_bootable_recovery" />
+    <remove-project name="CyanogenMod/android_build" />
+    
     <!-- Pull the most recent stable tag in case something has been changed. -->
     <project path="bootable/recovery" name="ProjectOpenCannibal/android_bootable_recovery" revision="cm-10.1" />
+    
+    <!-- Grab the Room Service System. -->
+    <project path="build" name="thenameisnigel/android_build" revision="cm-10.1" />
 
     <!-- Add gui and res folders for COTR. -->
     <project path="bootable/recovery/res" name="ProjectOpenCannibal/android_bootable_recovery_res" revision="master" />

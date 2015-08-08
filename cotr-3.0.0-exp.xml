@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Use this manifest to build Cannibal Open Touch 3.0.0 (for Kitkat devices) -->
+<!-- Use this manifest to build Cannibal Open Touch 3.0.0 (for Lollipop devices) -->
 
-<!-- For usage sync CM11 and drop this into .repo/local_manifests and re-sync -->
+<!-- For usage sync CM12 and drop this into .repo/local_manifests and re-sync -->
 <manifest>
 	<!-- Replace CWM w/ COTR -->
     <remove-project name="CyanogenMod/android_bootable_recovery" />

@@ -10,7 +10,7 @@ Contained are local manifests for building Cannibal Open Touch Recovery.
 	Gingerbread / Legacy devices          :    cotr-2.1.1.xml
 	Gingerbread-Hybrid / Kindle Fire only :    cotr-2.1.2-hybrid.xml
 	Jellybean / Last Gen                  :    cotr2.1.3-jb.xml
-	Lollipop / Current Devices			      :	   CarbonRecovery-LP511.xml
+	Lollipop / Current Devices			  :	   CarbonRecovery-LP511.xml
 
 Once the correct manifest has been determined place it in .repo/local_manifests/ within the appropriate Android build tree.
 

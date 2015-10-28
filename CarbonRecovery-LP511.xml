@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use this manifest to build Cannibal Open Touch 3.0.0 (for Lollipop devices) -->
+
+<manifest>
+	<!-- Replace CM Recovery with Carbon Recovery -->
+    <remove-project name="CyanogenMod/android_bootable_recovery" />
+    
+    <!-- Pull the most recent stable tag in case something has been changed. -->
+    <project path="bootable/recovery" name="ProjectOpenCannibal/carbon_bootable_recovery" revision="cm-12.1" />
+</manifest>
